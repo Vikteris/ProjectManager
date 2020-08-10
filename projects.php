@@ -58,9 +58,9 @@
                                     <input type='hidden' name='project_name' value='".$row["project_name"]."'>
                                 </form>
                                 
-                                <form class='upd' action='' method='post'>
-                                    <input class='update' type='submit' name='' value='UPDATE'>
-                                    <input type='hidden' name='download' value=' . '>
+                                <form class='upd' method='post'>
+                                    <input class='update' type='submit' name='update_project' value='UPDATE'>
+                                    <input type='hidden' name='project_name' value='".$row["project_name"]."'>
                                 </form>
                             </td>
                             </tr>";
@@ -70,6 +70,18 @@
                         echo "<tr>
                             </tr>";
                     }
+
+                    //UPDATE PROJECT
+                    if(isset($_POST['update_project']))
+                    echo "<div class='pUpdate'>
+                            <form action='functions.php' method='post'>
+                                <label>Project: &nbsp;".$_POST['project_name']." </label>
+                                <input type='text' name='project_newname' placeholder='Project new name'>
+                                <input type='hidden' name='project_old' value='".$_POST['project_name']."'>
+                                <input type='submit' name='rename_submit' value='Comfirm'>
+                            </form>
+                        </div>";
+               
                     
                     // mysqli_close($conn);
         ?>

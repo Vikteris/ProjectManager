@@ -1,4 +1,5 @@
-<?php require 'functions.php' ?>
+<?php require 'functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
 <header>
         <nav class="nav">
         <div>
-        <a href="index.php"><p>Project manager</p></a>
+        <a href=><p>Project manager</p></a>
         </div>
          
             <form class="workers" action="workers.php" method="POST">
@@ -42,6 +43,7 @@
     
         
     ?>
+    <?php header("Location: workers.php"); ?>
     <h1>WELCOME TO PROJECT MANAGER</h1>
     
     

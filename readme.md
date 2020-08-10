@@ -8,12 +8,11 @@
 -----------------------------------------
 ### How to reach the website:
 
-1. Download "FileBrowser"repository .Zip file and extract to root AMPPS "www" folder;
+1. Download "ProjectManager"repository .Zip file and extract to root AMPPS "www" folder;
 2. Open "MySQL Workbench" program. On navigation bar press 'Server'->'Data Import'. On 'Import from Dump Project Folder' browse the 'sql_dump' folder and open 'manager.sql'file.
     You can find it in a .zip file where you cloned from Github.
 3. Select 'projectmanager' schema and selet all tables, and click 'Start Import'.
-2. Go to internet browser('Chrome','Firefox',depends what browser you are using);
-3. Go to "localhost" and open "/ProjectManager" directory. **Notice!** AMPP software have to be working. This App allows you to open your computer "localhost"; 
+4. Go to "localhost" and open "/ProjectManager" directory. **Notice!** AMPP software have to be working. This App allows you to open your computer "localhost"; 
 ---------------------------------------
 
 

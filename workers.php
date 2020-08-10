@@ -55,8 +55,6 @@
                             <input type='submit' name='update_name' value='UPDATE'>
                             <input type='hidden' name='id' value='".$row["id"]."'>
                         </form>
-                        
-
                     </td>
                     </tr>";
                 }
@@ -91,7 +89,7 @@
         <!--  workers rename logic -->
             <?php
             if(isset($_POST['update_name']))
-            echo "<div>
+            echo "<div class='wUpdate'>
                     <form action='functions.php' method='post'>
                         <label>Worker id: &nbsp; ".$_POST['id']." </label>
                         <input type='text' name='new_name' placeholder='Worker new name' required>
@@ -99,6 +97,7 @@
                         <input type='submit' name='name_submit' value='Comfirm'>
                     </form>
                 </div>";
+
         ?>
                                
     </main>

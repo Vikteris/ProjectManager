@@ -42,6 +42,17 @@ if(isset($_POST['delete_project'])) {
     }
 
 
+// Project update
+    function update_project() {
+        global $conn;
+        $sql = "UPDATE projektai SET `project_name` ="."'".$_POST['project_newname']."'"." WHERE `project_name`="."'".$_POST['project_old']."'".";";
+        mysqli_query($conn, $sql);
+    }
+    if(isset($_POST['rename_submit'])) {
+        update_project();
+        header('Location: projects.php');
+    }
+
 
 // ADD new worker
     function add_workers() {
@@ -64,4 +75,7 @@ if(isset($_POST['delete_project'])) {
         update_name();
         header('Location: workers.php');
     } 
+
+
+    
 ?>
