@@ -102,7 +102,10 @@
                                
     </main>
     <footer>
-
+        <div class="footer">
+            <p2><a href="https://github.com/Vikteris?tab=repositories">About me</a></p2>
+            <p3>PHP+ SQL project</p3>
+        </div>
     </footer>
 </body>
 </html>

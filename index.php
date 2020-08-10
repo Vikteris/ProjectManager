@@ -48,9 +48,5 @@
     
     
 </main>
-<footer>
-    <!-- kažkas minimaliai prirašyta -->
-</footer>
-
 </body>
 </html>
